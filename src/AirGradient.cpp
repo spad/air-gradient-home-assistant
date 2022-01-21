@@ -13,7 +13,7 @@ MIT License
 
 #define hasPM true
 #define hasCO2 true
-#define hasSHT true
+#define hasSHT false
 
 #define hasDisplay true
 #define SCREEN_W 64
@@ -43,7 +43,7 @@ boolean connectMQTT = true;
 // Default MQTT settings
 String discoveryPrefix = "homeassistant";
 String nodeName = "air_gradient";
-String mqttServer = "raspberrypi.local";
+String mqttServer = "10.0.1.100";
 int mqttPort = 1883;
 String mqttUser = "";
 String mqttPassword = "";
