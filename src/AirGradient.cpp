@@ -24,6 +24,7 @@ MIT License
 #define updateInterval 5000000
 
 #include <AirGradient.h>
+#include <mqtt_settings.h>
 #include <WiFiManager.h>
 #include <PubSubClient.h>
 #include <ESP8266WiFi.h>
@@ -39,14 +40,6 @@ void showLoading();
 
 boolean connectWiFi = true;
 boolean connectMQTT = true;
-
-// Default MQTT settings
-String discoveryPrefix = "homeassistant";
-String nodeName = "air_gradient";
-String mqttServer = "10.0.1.100";
-int mqttPort = 1883;
-String mqttUser = "";
-String mqttPassword = "";
 
 // Global state
 String discoveryTopic = "none";
