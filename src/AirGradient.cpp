@@ -62,9 +62,9 @@ struct SensorCfg {
 const SensorCfg sensors[] = {
   {"WiFi Signal Strength", ".wifi", "RSSI", "signal_strength"},
   {"CO2", ".rco2", "ppm", "carbon_dioxide"},
-  {"PM2", ".pm02", "µg/m³", "pm25"},
-  {"Temperature", ".atmp", "°C", "temperature"},
-  {"Humidity", ".rhum", "%", "humidity"}
+  {"PM2", ".pm02", "µg/m³", "pm25"}
+  //{"Temperature", ".atmp", "°C", "temperature"},
+  //{"Humidity", ".rhum", "%", "humidity"}
 };
 
 void setup(){
@@ -96,7 +96,7 @@ void setup(){
 void loop() {
   updateState();
   ++slide;
-  delay(2000);
+  delay(30000);
 }
 
 
